@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="myName">Mustafa Manhal</string>
+    <string name="threeHr">3 hr</string>
+    <string name="engineer">Engineer</string>
+    <string name="russian">Russian</string>
+    <string name="five_days_ago">5 Days ago</string>
+    <string name="location">UK</string>
+    <string name="reviews">(150 Reviews)</string>
+    <string name="reviews_out_of_five">4.5</string>
+</resources>
