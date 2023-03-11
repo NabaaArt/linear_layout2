@@ -5,59 +5,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="@dimen/medium_padding"
+    android:padding="@dimen/mediumPadding"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/background_shape"
         android:orientation="horizontal"
-        android:padding="@dimen/small_padding"
-        android:background="@drawable/background_shape">
+        android:padding="@dimen/smallPadding">
+
         <LinearLayout
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:padding="@dimen/medium_padding"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="@dimen/mediumPadding">
+
             <ImageView
+                style="@style/roundedImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/daniel"/>
+                android:src="@drawable/cat" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/small_padding"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/myName"
-                android:paddingEnd="@dimen/normalPadding"
-                android:textSize="@dimen/large_font_size"
-                style="@style/myText.blackAndBold"/>
+            android:orientation="vertical"
+            android:paddingTop="@dimen/smallPadding">
 
             <TextView
+                style="@style/myText.blackAndBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/engineer"
+                android:paddingEnd="@dimen/normalPadding"
+                android:text="@string/my_name"
+                android:textSize="@dimen/normalTextSize" />
+
+            <TextView
+                style="@style/myText.darkBlueAndBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:paddingVertical="@dimen/normalPadding"
-                style="@style/myText.darkBlueAndBold"/>
+                android:text="@string/engineer"
+                android:textSize="12dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
                     android:src="@drawable/baseline_location_on_24"
-                    app:tint="@color/red"/>
+                    app:tint="@color/red" />
+
                 <TextView
                     style="@style/myText.lightBlue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/location" />
+                    android:text="@string/location"
+                    android:textSize="@dimen/smallTextSize" />
             </LinearLayout>
 
             <LinearLayout
@@ -65,55 +75,65 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingVertical="@dimen/normalPadding">
+
                 <TextView
+                    style="@style/myText.blackAndBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingEnd="@dimen/normalPadding"
+                    android:paddingEnd="@dimen/smallPadding"
                     android:text="@string/reviews"
-                    style="@style/myText.blackAndBold"/>
+                    android:textSize="@dimen/smallTextSize" />
+
                 <TextView
+                    style="@style/myText.blackAndBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingHorizontal="4dp"
-                    android:text="@string/reviews_out_of_five"
-                    style="@style/myText.blackAndBold"/>
+                    android:paddingHorizontal="2dp"
+                    android:text="@string/reviews_out_of_five" />
+
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
                     android:src="@drawable/baseline_star_24"
                     app:tint="@color/yellow" />
             </LinearLayout>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/small_padding"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingTop="@dimen/smallPadding">
+
             <TextView
                 style="@style/myText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="@dimen/normalPadding"
-                android:paddingEnd="@dimen/normalPadding"
-                android:text="@string/threeHr"
-                android:textColor="@color/white"
                 android:layout_gravity="end"
-                android:background="@drawable/my_rounded_shape"/>
+                android:background="@drawable/my_rounded_shape"
+                android:paddingStart="@dimen/smallPadding"
+                android:paddingEnd="@dimen/smallPadding"
+                android:text="@string/three_hour"
+                android:textColor="@color/white"
+                android:textSize="@dimen/smallTextSize" />
 
             <TextView
                 style="@style/myText.darkBlueAndBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingVertical="@dimen/normalPadding"
                 android:layout_gravity="end"
-                android:text="@string/russian"/>
+                android:paddingVertical="@dimen/normalPadding"
+                android:text="@string/nationality"
+                android:textSize="@dimen/smallTextSize" />
 
             <TextView
                 style="@style/myText.lightBlue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/five_days_ago" />
+                android:text="@string/five_days_ago"
+                android:textSize="@dimen/smallTextSize" />
 
         </LinearLayout>
     </LinearLayout>

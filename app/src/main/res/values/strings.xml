@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="myName">Mustafa Manhal</string>
-    <string name="threeHr">3 hr</string>
+    <string name="my_name">Nabaa Naz</string>
+    <string name="three_hour">3 hr</string>
     <string name="engineer">Engineer</string>
-    <string name="russian">Russian</string>
+    <string name="nationality">Russian</string>
     <string name="five_days_ago">5 Days ago</string>
     <string name="location">UK</string>
     <string name="reviews">(150 Reviews)</string>

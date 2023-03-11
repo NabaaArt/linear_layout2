@@ -2,7 +2,9 @@
 <resources>
     <dimen name="normalPadding">16dp</dimen>
     <dimen name="normalTextSize">16sp</dimen>
-    <dimen name="medium_padding">8dp</dimen>
-    <dimen name="small_padding">4dp</dimen>
-    <dimen name="large_font_size">18sp</dimen>
+    <dimen name="mediumPadding">8dp</dimen>
+    <dimen name="smallPadding">4dp</dimen>
+    <dimen name="large_font_size">17sp</dimen>
+    <dimen name="smallTextSize">13sp</dimen>
+
 </resources>
